@@ -6,6 +6,7 @@ All notable changes to this plugin will be documented here.
 
 - The setup skill matches the current connection: one Tailscale row with a slot per tailnet, several tailnets at once, company tailnets enabled at cursor.com and limited with `custom:grokbot` postures, and personal tailnets via one-click Connect or `tag:grokbot`.
 - Drops the single-tailnet flow and the "confirm it's my Tailscale login" step. Grok Bot asks Allow/Deny before removing a device, signing in again, adding a tailnet, or changing the default.
+- The plugin description covers one-click Connect, `tag:grokbot`, and the company tailnet.
 
 ## 1.0.2
 
