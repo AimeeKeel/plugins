@@ -1,11 +1,11 @@
 {
-  "name": "ringcentral-team-chat",
-  "displayName": "RingCentral Team Chat",
-  "version": "1.0.0",
+  "name": "ringcentral-phone",
+  "displayName": "RingCentral Phone",
+  "version": "1.1.0",
   "minClientVersions": {
     "cursor": "3.13.0"
   },
-  "description": "RingEX Team Chat remote MCP server.",
+  "description": "Read call activity, AI call notes, SMS, voicemail, and fax, and send SMS.",
   "author": {
     "name": "Cursor",
     "email": "plugins@cursor.com"
@@ -16,16 +16,17 @@
   "logo": "assets/logo.png",
   "keywords": [
     "ringcentral",
-    "ringex",
-    "team chat",
-    "messaging",
+    "ringcentral phone",
+    "phone",
+    "calls",
+    "sms",
     "mcp"
   ],
   "category": "integrations",
   "tags": [
     "ringcentral",
+    "phone",
     "communications",
-    "messaging",
     "mcp"
   ],
   "mcpServers": "./mcp.json"
