@@ -2,7 +2,7 @@
 
 Grok Bot plugin that lets agents reach [Model Context Protocol](https://modelcontextprotocol.io/) servers on your private [Tailscale](https://tailscale.com) network (tailnet).
 
-On your own tailnet, an owner or admin can one-click Connect an untagged device, or it joins as tag:grokbot; on your team's company tailnet, turned on by a team admin, each member uses their own device.
+Let Grok Bot reach MCP servers on your private Tailscale network: connect your own tailnet, or your team's company tailnets turned on by a team admin, with each member using their own device.
 
 ## Who can use it
 
