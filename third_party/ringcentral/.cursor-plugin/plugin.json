@@ -1,11 +1,11 @@
 {
   "name": "ringcentral",
   "displayName": "RingCentral",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "minClientVersions": {
     "cursor": "3.13.0"
   },
-  "description": "RingEX Phone remote MCP server.",
+  "description": "RingEX Phone and Team Chat remote MCP servers.",
   "author": {
     "name": "Cursor",
     "email": "plugins@cursor.com"
@@ -18,6 +18,8 @@
     "ringcentral",
     "ringex",
     "phone",
+    "team chat",
+    "messaging",
     "mcp"
   ],
   "category": "integrations",
@@ -25,6 +27,7 @@
     "ringcentral",
     "communications",
     "telephony",
+    "messaging",
     "mcp"
   ],
   "mcpServers": "./mcp.json"
