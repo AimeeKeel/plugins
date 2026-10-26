@@ -118,6 +118,7 @@ Official Cursor plugins for popular developer tools, frameworks, and SaaS produc
 | `framer` | [Framer](third_party/framer/) | Cursor | Integrations | Design, build, and edit your Framer sites, pages, and CMS content. |
 | `vanta` | [Vanta](third_party/vanta/) | Cursor | Integrations | Query and remediate compliance tests, controls, frameworks, risks, and vulnerabilities in Vanta. |
 | `ringcentral` | [RingCentral](third_party/ringcentral/) | Cursor | Integrations | RingEX Phone remote MCP server. |
+| `ringcentral-team-chat` | [RingCentral Team Chat](third_party/ringcentral-team-chat/) | Cursor | Integrations | RingEX Team Chat remote MCP server. |
 Author values match each plugin’s `plugin.json` `author.name` (Cursor lists `plugins@cursor.com` in the manifest).
 
 ## Repository structure
