@@ -12,7 +12,7 @@ Let Grok Bot reach MCP servers on your private Tailscale network: connect your o
 
 ## MCP
 
-This plugin ships no `mcp.json`. Grok Bot's Tailscale connection is served by the Cursor backend, and installing the plugin is the opt-in that turns it on. MCP servers on the tailnet are added separately, by their `https://` address.
+This plugin ships no `mcp.json`. Grok Bot's Tailscale connection is served by the Cursor backend, and installing the plugin is the opt-in that turns it on. MCP servers on the tailnet are added separately, by their `http://` or `https://` address.
 
 ## Setup
 
@@ -25,7 +25,7 @@ Grok Bot desktop has one **Tailscale** row (**Connect apps → Your plugins**) w
 
 - An address under a tailnet's `.ts.net` name uses that tailnet. Short names and `100.x` addresses use the member's default tailnet.
 - On a personal tailnet, only the bot owner, linked teammates, and routines the owner schedules can use it. On a company tailnet, only that member's own chats and routines.
-- Grok Bot asks before it removes a device, signs in again, adds a tailnet, or changes the default.
+- Grok Bot asks before it removes a device, adds a tailnet, or changes the default. Members change the default by asking Grok Bot.
 - To disconnect, click **Remove** on the Tailscale plugin page in Grok Bot.
 
 ## Docs

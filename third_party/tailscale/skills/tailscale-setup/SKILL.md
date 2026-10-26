@@ -7,9 +7,9 @@ description: Connect Grok Bot to Tailscale on a company tailnet (a team admin en
 
 Grok Bot desktop has one Tailscale row: **Connect apps → Your plugins → Tailscale**. The row has one slot per tailnet, labeled with the tailnet name first, then **Personal** or the team name, then the `.ts.net` address.
 
-A member can connect several tailnets at once. An address under a tailnet's `.ts.net` name goes to that tailnet. A short name or a `100.x` address goes to the member's default tailnet. They change the default on the plugin page or by asking Grok Bot.
+A member can connect several company tailnets at once, plus one personal tailnet; switching personal tailnets parks the others. An address under a tailnet's `.ts.net` name goes to that tailnet. A short name or a `100.x` address goes to the member's default tailnet. They change the default by asking Grok Bot.
 
-Grok Bot shows an Allow/Deny card before it removes a device, signs in to a tailnet again, adds a tailnet, or changes the default. Wait for **Allow**.
+Grok Bot shows an Allow/Deny card before it removes a device, adds a tailnet, or changes the default. Wait for **Allow**.
 
 Reach tailnet MCP servers through this row. A Tailscale client installed on the bot's computer is wiped when that computer is replaced.
 
@@ -79,14 +79,17 @@ Otherwise define `tag:grokbot` and grant it only the MCP servers, then sign in w
 
 ## Who can use it
 
-On a personal tailnet, only the bot owner's messages, linked teammates, and routines the owner schedules. On a company tailnet, only that member's own Grok Bot chats, Slack DMs, and routines they schedule. Removing the member from the team logs the device out.
+On a personal tailnet, only the bot owner's messages, linked teammates, and routines the owner schedules. On a company tailnet, only that member's own Grok Bot chats, Slack DMs, and routines they schedule. Slack Connect channels never use a tailnet. Removing the member from the team logs the device out.
 
 ## Add MCP servers
 
-Add a server by its `https://` address on the tailnet, or add it when the user asks. Use the full `name.tailnet.ts.net` host when it should use that tailnet. A short name or a `100.x` address uses the default tailnet.
+Add a server by its `http://` or `https://` address on the tailnet, or add it when the user asks. Use the full `name.tailnet.ts.net` host when it should use that tailnet. A short name or a `100.x` address uses the default tailnet. Split-DNS names and subnet-route addresses use HTTPS on port 443.
 
 ## Troubleshooting
 
 - **Wrong account or tailnet:** **Sign in again**.
-- **Expired link:** **Authenticate** again.
+- **Expired link or expired device:** **Authenticate** again. Company devices follow the tailnet's key expiry.
+- **Company sign-in says Grok Bot's Tailscale app isn't allowed:** the tailnet needs a plan with custom node attributes (Tailscale Premium or Enterprise).
 - **Can't reach a server:** check the full `.ts.net` name against the default tailnet, the policy grant for that host and port, split DNS and subnet routes (ask the user's Cursor contact to enable those), and the certificate.
+- **Device shared in from another tailnet:** it can't be reached by name; use its `100.x` address with the receiving tailnet as the default.
+- **Server with an internal certificate:** a team admin adds the CA in **Integrations → Tailscale** (ask the user's Cursor contact to enable it).
