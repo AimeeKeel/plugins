@@ -89,7 +89,8 @@ Add a server by its `http://` or `https://` address on the tailnet, or add it wh
 
 - **Wrong account or tailnet:** **Sign in again**.
 - **Expired link or expired device:** **Authenticate** again. Company devices follow the tailnet's key expiry.
-- **Company sign-in says Grok Bot's Tailscale app isn't allowed:** the tailnet needs a plan with custom node attributes (Tailscale Premium or Enterprise).
-- **Can't reach a server:** check the full `.ts.net` name against the default tailnet, the policy grant for that host and port, split DNS and subnet routes (ask the user's Cursor contact to enable those), and the certificate.
+- **"Your tailnet hasn't allowed Grok Bot's Tailscale app":** a tailnet admin allows the app, then the member connects again.
+- **"Tailscale refused the sign-in key for your company tailnet":** company sign-in needs a plan with custom node attributes (Tailscale Premium or Enterprise). Move the tailnet to one of those plans, then **Authenticate** again.
+- **Can't reach a server:** check the full `.ts.net` name against the default tailnet, the policy grant for that host and port, split DNS and subnet routes (ask the user's Cursor contact to enable those), and the certificate. A public DNS name that points at a Tailscale address isn't followed; use the MagicDNS name or split DNS.
 - **Device shared in from another tailnet:** it can't be reached by name; use its `100.x` address with the receiving tailnet as the default.
 - **Server with an internal certificate:** a team admin adds the CA in **Integrations → Tailscale** (ask the user's Cursor contact to enable it).
