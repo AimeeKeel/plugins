@@ -642,6 +642,11 @@
       "name": "ringcentral",
       "source": "third_party/ringcentral",
       "description": "RingEX Phone remote MCP server."
+    },
+    {
+      "name": "ringcentral-team-chat",
+      "source": "third_party/ringcentral-team-chat",
+      "description": "RingEX Team Chat remote MCP server."
     }
   ]
 }
