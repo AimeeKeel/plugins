@@ -1,8 +1,8 @@
 # RingCentral
 
-Cursor plugin that connects agents to [RingCentral](https://www.ringcentral.com) RingEX Phone and RingEX Team Chat through RingCentral's hosted [Model Context Protocol](https://modelcontextprotocol.io/) servers.
+Cursor plugin that connects agents to [RingCentral](https://www.ringcentral.com) RingEX Phone through RingCentral's hosted [Model Context Protocol](https://modelcontextprotocol.io/) server.
 
-RingEX Phone and Team Chat remote MCP servers.
+RingEX Phone remote MCP server.
 
 ## Install
 
@@ -20,10 +20,6 @@ Or run `/add-plugin ringcentral` in chat.
     "ringcentral": {
       "type": "http",
       "url": "https://mcp.labs.ringcentral.com/ringex/phone"
-    },
-    "ringcentral-team-chat": {
-      "type": "http",
-      "url": "https://mcp.labs.ringcentral.com/ringex/v1.1.0/team-chat"
     }
   }
 }
@@ -31,7 +27,7 @@ Or run `/add-plugin ringcentral` in chat.
 
 ## Before you connect
 
-You need a RingCentral account with RingEX phone service and team messaging.
+You need a RingCentral account with RingEX phone service.
 
 ## Notes
 
@@ -42,11 +38,9 @@ You need a RingCentral account with RingEX phone service and team messaging.
 
 - RingCentral: https://www.ringcentral.com
 - RingEX Phone MCP server: https://developers.ringcentral.com/mcp/servers/ringex-phone/
-- RingEX Team Chat MCP server: https://developers.ringcentral.com/mcp/servers/ringex-chat/
-- Phone server URL: https://mcp.labs.ringcentral.com/ringex/phone
-- Team Chat server URL: https://mcp.labs.ringcentral.com/ringex/v1.1.0/team-chat
+- Server URL: https://mcp.labs.ringcentral.com/ringex/phone
 
-Logo is RingCentral's mark from the `ringcentral` GitHub organization avatar (256×256). The submitted logo URLs were web pages rather than images, and ringcentral.com could not be reached when this plugin was built.
+Logo is RingCentral's mark from the `ringcentral` GitHub organization avatar (256×256). The submitted logo URL (`https://developers.ringcentral.com/mcp/servers/ringex-phone/`) is a web page, and ringcentral.com could not be reached when this plugin was added.
 
 ## License
 

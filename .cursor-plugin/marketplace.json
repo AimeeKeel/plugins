@@ -641,7 +641,7 @@
     {
       "name": "ringcentral",
       "source": "third_party/ringcentral",
-      "description": "RingEX Phone and Team Chat remote MCP servers."
+      "description": "RingEX Phone remote MCP server."
     }
   ]
 }
