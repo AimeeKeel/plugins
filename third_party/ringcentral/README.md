@@ -1,25 +1,23 @@
-# RingCentral Phone
+# RingCentral
 
-Cursor plugin that connects agents to [RingCentral Phone](https://www.ringcentral.com) through RingCentral's hosted [Model Context Protocol](https://modelcontextprotocol.io/) server.
+Cursor plugin that connects agents to [RingCentral](https://www.ringcentral.com) RingEX Phone through RingCentral's hosted [Model Context Protocol](https://modelcontextprotocol.io/) server.
 
-Read call activity, AI call notes, SMS, voicemail, and fax, and send SMS.
-
-This is a separate plugin from [RingCentral Chat](../ringcentral-chat/). Each one connects to its own RingCentral server.
+RingEX Phone remote MCP server.
 
 ## Install
 
 1. Open **Cursor Settings → Plugins**.
-2. Search for **RingCentral Phone**.
+2. Search for **RingCentral**.
 3. Click **Install**, then complete the RingCentral sign-in prompt if one appears.
 
-Or run `/add-plugin ringcentral-phone` in chat.
+Or run `/add-plugin ringcentral` in chat.
 
 ## MCP
 
 ```json
 {
   "mcpServers": {
-    "ringcentral-phone": {
+    "ringcentral": {
       "type": "http",
       "url": "https://mcp.labs.ringcentral.com/ringex/phone"
     }
@@ -29,7 +27,7 @@ Or run `/add-plugin ringcentral-phone` in chat.
 
 ## Before you connect
 
-You need a RingCentral account with phone service.
+You need a RingCentral account with RingEX phone service.
 
 ## Notes
 
@@ -39,7 +37,7 @@ You need a RingCentral account with phone service.
 ## Docs
 
 - RingCentral: https://www.ringcentral.com
-- RingCentral Phone MCP server: https://developers.ringcentral.com/mcp/servers/ringex-phone/
+- RingEX Phone MCP server: https://developers.ringcentral.com/mcp/servers/ringex-phone/
 - Server URL: https://mcp.labs.ringcentral.com/ringex/phone
 
 Logo is RingCentral's mark from the `ringcentral` GitHub organization avatar (256×256). The submitted logo URL (`https://developers.ringcentral.com/mcp/servers/ringex-phone/`) is a web page, and ringcentral.com could not be reached when this plugin was added.

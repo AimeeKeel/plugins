@@ -1,11 +1,11 @@
 {
-  "name": "ringcentral-chat",
-  "displayName": "RingCentral Chat",
+  "name": "ringcentral",
+  "displayName": "RingCentral",
   "version": "1.0.0",
   "minClientVersions": {
     "cursor": "3.13.0"
   },
-  "description": "Read team chats and posts, send messages, and manage teams, tasks, and notes.",
+  "description": "RingEX Phone remote MCP server.",
   "author": {
     "name": "Cursor",
     "email": "plugins@cursor.com"
@@ -16,16 +16,15 @@
   "logo": "assets/logo.png",
   "keywords": [
     "ringcentral",
-    "ringcentral chat",
-    "chat",
-    "team messaging",
+    "ringex",
+    "phone",
     "mcp"
   ],
   "category": "integrations",
   "tags": [
     "ringcentral",
-    "chat",
     "communications",
+    "telephony",
     "mcp"
   ],
   "mcpServers": "./mcp.json"
