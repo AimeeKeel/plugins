@@ -7,7 +7,7 @@ description: Connect Grok Bot to Tailscale on a company tailnet (a team admin en
 
 Grok Bot desktop has one Tailscale row: **Connect apps → Your plugins → Tailscale**. The row has one slot per tailnet, labeled with the tailnet name first, then **Personal** or the team name, then the `.ts.net` address.
 
-A member can connect several company tailnets at once, plus one personal tailnet; switching personal tailnets parks the others. An address under a tailnet's `.ts.net` name goes to that tailnet. A short name or a `100.x` address goes to the member's default tailnet. They change the default by asking Grok Bot.
+A member can connect several company tailnets at once, plus one personal tailnet at a time. They can add more personal tailnets, but only one is live; to switch, they make another one the default, which parks the current one. An address under a tailnet's `.ts.net` name goes to that tailnet. A short name or a `100.x` address goes to the member's default tailnet. They change the default by asking Grok Bot.
 
 Grok Bot shows an Allow/Deny card before it removes a device, adds a tailnet, or changes the default. Wait for **Allow**.
 
