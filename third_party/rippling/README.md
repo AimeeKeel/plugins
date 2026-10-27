@@ -39,7 +39,7 @@ Rippling documents two MCP products. This plugin is the [Rippling MCP](https://d
 
 ## What agents can do
 
-The server exposes one code tool. Its description lists the typed `codemode.*` functions the signed-in user is allowed to call. The model writes a JavaScript program against those functions, and that program runs in a fresh isolate with no network egress. Credentials stay outside the isolate. The tool list itself does not enumerate every function; the description for the connected user is the source of truth.
+The Rippling MCP exposes one code tool. Its description lists the typed `codemode.*` functions the connected user is authorized to call. The model writes a JavaScript program against those functions, and the program runs inside a fresh Cloudflare Dynamic Worker isolate with no network egress. Credentials stay outside that isolate. The tool list itself does not enumerate every function; the description for the connected user is the source of truth.
 
 | Area | What the connected user can do |
 | --- | --- |
