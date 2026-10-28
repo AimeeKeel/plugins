@@ -564,6 +564,11 @@
       "description": "Work with contacts, invoices, estimates, and items in Zoho Books."
     },
     {
+      "name": "business-central",
+      "source": "third_party/business-central",
+      "description": "Work with customers, vendors, items, sales and purchase documents, and the general ledger in Business Central."
+    },
+    {
       "name": "square",
       "source": "third_party/square",
       "description": "Work with payments, orders, catalog, customers, and invoices."
