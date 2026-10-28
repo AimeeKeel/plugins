@@ -50,7 +50,7 @@ The server is the source of truth for tool names and schemas.
 - Business Central API: https://learn.microsoft.com/dynamics365/business-central/dev-itpro/api-reference/v2.0/
 - Model Context Protocol: https://modelcontextprotocol.io
 
-Logo is Business Central's official mark, from `microsoft.com`.
+Logo is Business Central's official AppSource mark, from Microsoft's [`microsoft/BCTech`](https://github.com/microsoft/BCTech) repository.
 
 ## License
 
